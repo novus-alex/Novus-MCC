@@ -8,14 +8,56 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
   </head>
 
   <body>
-  	<div class="container">
-  		<p>This is the dashboard page!</p>
-		</div>
+  	<div class="container w-100 p-0 m-0 vh-100">
+			<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark vh-100" style="width: 280px;">
+		    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+		    	<img src="../img/logo_w.png" class="w-25">
+		      <span class="fs-4">MCC Dashboard</span>
+		    </a>
+		    <hr>
+		    <ul class="nav nav-pills flex-column mb-auto">
+		      <li class="nav-item">
+		        <a href="#" class="nav-link active" aria-current="page">
+		          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+		          Overview
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#" class="nav-link text-white">
+		          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+		          RF Settings
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#" class="nav-link text-white">
+		          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+		          UART Settings
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#" class="nav-link text-white">
+		          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+		          Chart Settings
+		        </a>
+		      </li>
+		      <li>
+		        <a href="#" class="nav-link text-white">
+		          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+		          Logs
+		        </a>
+		      </li>
+		    </ul>
+		    <hr>
+		    <form id="logout">
+		    	<button type="submit" class="btn btn-primary w-100">Logout</button>
+		    </form>
 
-		<script type="text/javascript" src="../js/authentication.js"></script>
+		    <script type="text/javascript" src="../js/logout.js"></script>
+		  </div>
+		</div>
   </body>
 </html>
