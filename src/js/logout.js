@@ -1,7 +1,7 @@
-const logout = document.getElementById('logout')
-logout.addEventListener("submit", async (event) => {
-	event.preventDefault()
-
-	console.log("ok")
-	window.location.replace('index.html')
+$(document).ready(function() {
+	const logout = document.getElementById('logout');
+	logout.addEventListener("submit", async (event) => {
+		event.preventDefault();
+		window.location.replace('index.html');
+	})
 })

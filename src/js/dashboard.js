@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	document.getElementById('content').src = "dashboard/overview.html";
 	dashboardHandler();
-	console.log('ok');
 })
 
 function dashboardHandler(e) {
@@ -33,6 +32,8 @@ function dashboardHandler(e) {
 			break;
 		default:
 			document.getElementById('content').src = "dashboard/overview.html";
+
+		console.log(e.innerText.trim())
 	}
 }
 
