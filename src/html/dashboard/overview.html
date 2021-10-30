@@ -7,26 +7,17 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <style type="text/css">
-    	body {
-    		background-image: url('../../img/bg.jpg');
-    		background-size: cover;
-    		overflow: hidden;
-    	}
 
-    	.box {
-    		background-color: #2C2F33;
-    	}
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="../../../node_modules/chartjs-chart-radial-gauge/build/Chart.RadialGauge.umd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/overview.css">
   </head>
 
   <body>
   	<div class="container pr-1 m-0 text-white">
-  		<div class="d-flex flex-column mb-3 justify-content-start p-4 w-100">
+  		<div class="d-flex flex-column mb-3 justify-content-start p-4 vw-100 vh-100">
   			<h1 class="bd-title text-white mb-3 fw-normal">Overview</h1>
-  			<div class="d-flex flex-row justify-content-between p-0">
+  			<div class="d-flex flex-row justify-content-between p-0 w-100">
   				<div class="d-flex flex-column w-50">
 		  			<div class="box rounded shadow p-3 my-2 mx-2">
 		  				<canvas class="my-4 p-0 m-0" id="chart" style="width:125%;max-width:700px"></canvas>
@@ -42,6 +33,30 @@
 	  				<div class="box rounded shadow p-3 my-2 mx-2">
 		  				<canvas class="my-4 p-0 m-0" id="gauge-speed" style="width:125%;max-width:700px"></canvas>
 		  			</div>
+	  			</div>
+	  			<div class="d-flex flex-column justify-content-between w-25">
+	  				<div class="box rounded shadow p-3 my-2 mx-2 h-100">
+		  				<h3 class="fw-normal p-0">Telemetry</h3>
+		  				<hr>
+			  				<div class="px-1 w-100 text-center">
+			  					<p class="text-success">Status: Available</p>
+			  					<p>Frequence: 2.4GHz</p>
+			  					<p>Reception: 98%</p>
+			  					<p class="more-info">Current: 20mA</p>
+			  				</div>
+			  			<hr>
+			  		</div>
+			  		<div class="box rounded shadow p-3 my-2 mx-2 h-100">
+			  			<h3 class="fw-normal p-0">Battery</h3>
+		  				<hr>
+			  				<div class="px-1 w-100 text-center">
+			  					<p class="text-success">Status: Nominal</p>
+			  					<p>Voltage: 4.9V</p>
+			  					<p class="text-warning">Charge: 45%</p>
+			  					<p class="more-info">Current: 20mA</p>
+			  				</div>
+			  			<hr>
+			  		</div>
 	  			</div>
   			</div>
   		</div>

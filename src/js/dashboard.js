@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	document.getElementById('content').src = "dashboard/overview.html";
+	startTime();
 	dashboardHandler();
 })
 
@@ -42,4 +43,20 @@ function removeActive() {
 	for (var i = 0; i < links.length; i++) {
 		links[i].classList.remove('active')
 	}
+}
+
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =  "GMT+2 - " + h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
 }

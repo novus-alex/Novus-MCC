@@ -72,7 +72,7 @@ var config_alt = {
    text: "Altitude"
   }, 
   centerArea: {
-            text: '75',
+            text: '75 m',
           },
   centerPercentage: 80
  }
@@ -105,7 +105,7 @@ var config_speed = {
    text: "Speed"
   }, 
   centerArea: {
-            text: '95',
+            text: '95 m/s',
           },
   centerPercentage: 80
  }

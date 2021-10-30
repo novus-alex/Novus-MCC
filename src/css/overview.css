@@ -1,0 +1,19 @@
+body {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.box {
+    background-color: #2C2F33;
+}
+
+.more-info {
+    display: initial;
+}
+
+@media only screen and (max-width: 1400px) {
+    .more-info {
+        display: none;
+    }
+}
