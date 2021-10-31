@@ -1,4 +1,6 @@
-# Novus - MCC
+<p align="center">
+  <img src="README/MCC-logo.png"/>
+</p>
 
 Thanks to all of people who helped me in this project !
 
@@ -14,10 +16,10 @@ Here's somme cool photos of what is look like
 
 ### Login
 <p align="center">
-  <img src="README/login.png" />
+  <img src="README/login.png"/>
 </p>
 
 ### Overview
 <p align="center">
-  <img src="README/overview.png" />
+  <img src="README/overview.png"/>
 </p>
