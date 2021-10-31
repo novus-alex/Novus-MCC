@@ -11,6 +11,13 @@ This is why I give you a python script that can read serial port from an Arduino
 ## Usage
 
 Here's somme cool photos of what is look like
+
+### Login
+<p align="center">
+  <img src="README/login.png" />
+</p>
+
+### Overview
 <p align="center">
   <img src="README/overview.png" />
 </p>
